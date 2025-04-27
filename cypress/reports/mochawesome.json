@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-20T16:34:13.495Z",
+    "end": "2025-04-20T16:35:33.093Z",
+    "duration": 79598,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a6740e45-6d20-4818-b45c-c28b218798c7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Features\\batchJob.feature",
+      "file": "cypress\\e2e\\Features\\batchJob.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a70c187-494a-402b-a637-0071279fc866",
+          "title": "Create batch job",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a background removal job",
+              "fullTitle": "Create batch job Create a background removal job",
+              "timedOut": null,
+              "duration": 27794,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//body[1]/div[1]/div[4]/div[1]/div[2]/div[2]/div[1]/div[1]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//body[1]/div[1]/div[4]/div[1]/div[2]/div[2]/div[1]/div[1]`, but never found it.\n    at Object.bgRemovalCard (cypress/pages/batchJob_Page.js:3:30)\n    at batchJob.clickBgCard (cypress/pages/batchJob_Page.js:12:20)\n    at Context.eval (cypress/e2e/step_definitions/batchJob_StepDef.js:10:11)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)\n    at getRet (https://app.domyshoot.com/__cypress/runner/cypress_runner.js:119652:20)\n    at tryCatcher (https://app.domyshoot.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://app.domyshoot.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://app.domyshoot.com/__cypress/runner/cypress_runner.js:119663:66)",
+                "diff": null
+              },
+              "uuid": "9c3bf0e0-1dab-4e3c-9537-a86180e87fb6",
+              "parentUUID": "0a70c187-494a-402b-a637-0071279fc866",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a marketplace job",
+              "fullTitle": "Create batch job Create a marketplace job",
+              "timedOut": null,
+              "duration": 51246,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "96fdafcc-2e31-4f02-b2fd-64b41b7b7f05",
+              "parentUUID": "0a70c187-494a-402b-a637-0071279fc866",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96fdafcc-2e31-4f02-b2fd-64b41b7b7f05"
+          ],
+          "failures": [
+            "9c3bf0e0-1dab-4e3c-9537-a86180e87fb6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 79040,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
