@@ -2,7 +2,7 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 const batchJob = require('../../pages/batchJob_Page');
 
 Given('the user opens the homepage', () => {
-  cy.login1();
+  cy.visit("baseUrl");
   cy.wait(15000);
 });
 

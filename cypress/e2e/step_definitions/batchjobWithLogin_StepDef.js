@@ -18,12 +18,14 @@ Then("the user uploads a file",()=>{
 
 })
 
-When("the user scrolls up the homepage",()=>{
-    batchjobWithLogin.clickOnHeader();
+When("the user clicks on the aitaskdisable preset",()=>{
+    batchjobWithLogin.clickAiTaskDisable();
 })
 
-When("the user clicks on the aitaskdisable preset",()=>{
-        batchjobWithLogin.clickAiTaskDisable();
-    })
+Then ("the user uploads a file for aitaskdisable",()=>{
+    batchjobWithLogin.uploadFileAi();
+})
+
+
 
 
