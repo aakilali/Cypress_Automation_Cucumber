@@ -6,8 +6,8 @@ const dresmaLoginFeature = require ('../../pages/dresmaLogin')
 
 Given('Home page is opened', function() {
     cy.visit("/")
-    // cy.wait(10000)
-    cy.wait('@apiCall');
+    cy.wait(15000)
+    // cy.wait('@apiCall');
 })
 
 When("A user click on login button",()=>{
