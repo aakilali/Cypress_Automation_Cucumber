@@ -17,3 +17,4 @@
 import './commands'
 import 'cypress-xpath'; 
 import './hooks'; // Add this line
+import '@shelex/cypress-allure-plugin';
