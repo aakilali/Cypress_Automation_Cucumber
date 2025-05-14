@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "features": "cypress run --spec \"cypress/e2e/Features/*.feature\""
+    "test1": "echo \"Error: no test specified\" && exit 1",
+    "features": "cypress run --spec \"cypress/e2e/Features/*.feature\"",
+    "test": "cypress run",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open"
   },
   "author": "aakil",
   "license": "ISC",
